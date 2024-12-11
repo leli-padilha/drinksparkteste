@@ -8,8 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#0C312B",
+        secondary: "#E45C06"
+      },
+      fontFamily: {
+        samsara: ['Samsara'],
+        ernestine: ['ErnestineOT'],
+        cenzo: ['Cenzo Flare']
       },
     },
   },
