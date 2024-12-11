@@ -27,8 +27,8 @@ export default function Page(){
     return (
         <>
             <Header />
-            <div className="bg-primary h-screen">
-                <div className="flex flex-col items-center gap-2 h-full">
+            <div className="bg-primary">
+                <div className="flex flex-col items-center gap-2">
                    
                     <div className="relative flex items-center justify-center">
                         <button onClick={prevDrink} className="absolute left-0 p-2 rounded-full z-10">
@@ -67,7 +67,7 @@ export default function Page(){
                     </div>
 
                     {/* Active Drink Info */}
-                    <div className="p-2 h-full w-full bg-center bg-no-repeat bg-cover flex flex-col items center justify-between" style={{backgroundImage: `url(${activeDrink.image})`}}>
+                    <div className="p-2 h-screen w-full bg-center bg-no-repeat bg-cover flex flex-col items center justify-between" style={{backgroundImage: `url(${activeDrink.image})`}}>
                         <h2 className="text-secondary font-cenzo font-extrabold text-3xl text-center">{activeDrink.name}</h2>
                         <div>
                             <p className="text-white font-cenzo text-3xl font-extrabold">{activeDrink.price}</p>
